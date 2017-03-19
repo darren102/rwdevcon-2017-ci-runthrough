@@ -64,4 +64,8 @@ class DataTests: XCTestCase {
     person.last = "吴"
     XCTAssertEqual(person.fullNameFor("zh"), "吴桐")
   }
+
+  func testMakeFailure() {
+    XCTFail("Deliberately make this test fail")
+  }
 }
